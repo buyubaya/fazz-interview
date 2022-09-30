@@ -1,0 +1,31 @@
+@import 'styles';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rightArea {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.inputItemWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputSearchItem {
+  width: 100%;
+}
+
+@include responsive-max(1024px) {
+  .leftArea {
+    width: 100%;
+  }
+}

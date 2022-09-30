@@ -1,0 +1,53 @@
+.sidebarWrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.logoArea {
+  display: flex;
+  justify-content: center;
+  padding: 60px 16px;
+}
+
+.logoOuter {
+  width: 80px;
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+  max-width: 100%;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    outline: 1px solid rgba(255, 255, 255, 0.65);
+    z-index: 1;
+  }
+}
+
+.logoImg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuArea {
+  padding: 0;
+}

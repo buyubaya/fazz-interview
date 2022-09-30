@@ -1,0 +1,18 @@
+.container {
+  height: 100vh;
+  background: #efefef;
+}
+
+.mainContentWrapper {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.outletContentWrapper {
+  flex: 1;
+  height: 100%;
+  padding: 24px;
+  overflow: auto;
+}

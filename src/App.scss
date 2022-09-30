@@ -1,0 +1,9 @@
+@import './styles/normalize.scss';
+@import './styles/fonts.scss';
+@import './styles/_variables';
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: $cl-primary;
+  font-size: $fs-primary;
+}

@@ -1,0 +1,27 @@
+@import 'styles';
+
+$table-min-width: 768px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tableArea {
+  overflow: auto;
+
+  @include custom-scrollbar();
+
+  :global {
+    .ant-table-sticky-scroll {
+      display: none;
+    }
+  }
+}
+
+.paginationWrapper {
+  display: block;
+  padding-top: 24px;
+}
